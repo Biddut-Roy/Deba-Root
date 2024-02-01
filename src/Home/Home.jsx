@@ -5,9 +5,7 @@ const Home = () => {
     const [location, setLocation] = useState(null);
 
     useEffect(() => {
-      // Check if the browser supports geolocation
       if (navigator.geolocation) {
-        // Get the current position
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const { latitude, longitude } = position.coords;
