@@ -22,6 +22,9 @@ const Home = () => {
   
     return (
       <div>
+       {
+        alert("location on Please!!")
+       }
         <h1>Current Location</h1>
         {location ? (
           <div>
